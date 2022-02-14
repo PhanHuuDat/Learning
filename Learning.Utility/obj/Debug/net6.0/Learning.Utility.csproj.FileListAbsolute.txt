@@ -1,0 +1,12 @@
+E:\Hoctap\GitHUB\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.deps.json
+E:\Hoctap\GitHUB\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.dll
+E:\Hoctap\GitHUB\Learning\Learning.Utility\bin\Debug\net6.0\ref\Learning.Utility.dll
+E:\Hoctap\GitHUB\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.pdb
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.AssemblyInfoInputs.cache
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.AssemblyInfo.cs
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.csproj.CoreCompileInputs.cache
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.dll
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\ref\Learning.Utility.dll
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.pdb
+E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.csproj.AssemblyReference.cache

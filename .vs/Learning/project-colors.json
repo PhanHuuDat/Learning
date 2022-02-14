@@ -10,7 +10,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "6132d5f3-3442-469a-b0dd-733bf3a23670": {
+      "ProjectGuid": "6132d5f3-3442-469a-b0dd-733bf3a23670",
+      "DisplayName": "Learning.DataAccess",
+      "ColorIndex": 1
+    },
+    "32fa3e1c-6585-4716-bd14-1bc4dc47ae77": {
+      "ProjectGuid": "32fa3e1c-6585-4716-bd14-1bc4dc47ae77",
+      "DisplayName": "Learning.Model",
+      "ColorIndex": 2
+    },
+    "6c1fa045-13e0-4f04-b8be-d3f3d1ca3867": {
+      "ProjectGuid": "6c1fa045-13e0-4f04-b8be-d3f3d1ca3867",
+      "DisplayName": "Learning.Utility",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }

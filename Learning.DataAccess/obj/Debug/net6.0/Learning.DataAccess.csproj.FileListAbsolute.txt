@@ -1,0 +1,17 @@
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.DataAccess.deps.json
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.DataAccess.dll
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\ref\Learning.DataAccess.dll
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.DataAccess.pdb
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.csproj.AssemblyReference.cache
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.AssemblyInfoInputs.cache
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.AssemblyInfo.cs
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.csproj.CoreCompileInputs.cache
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.csproj.CopyComplete
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.dll
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\ref\Learning.DataAccess.dll
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.pdb
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.DataAccess.runtimeconfig.json
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.genruntimeconfig.cache
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.Models.dll
+E:\Hoctap\GitHUB\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.Models.pdb

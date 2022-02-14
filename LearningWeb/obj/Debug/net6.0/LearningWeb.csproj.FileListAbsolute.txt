@@ -59,3 +59,7 @@ E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netstand
 E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\Hoctap\GitHUB\Learning\LearningWeb\obj\Debug\net6.0\LearningWeb.csproj.CopyComplete
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.DataAccess.dll
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.DataAccess.pdb
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.Models.dll
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.Models.pdb

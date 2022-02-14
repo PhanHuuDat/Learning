@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wGNid7m+JZkaw/ydDLN9khJLclIVxK5Lt3YGSOsvWQ0=",
+  "Hash": "POf8SM82EbxJlLaKVnSVTbE6P2OeIPTvU3epI6qZeMg=",
   "Source": "LearningWeb",
   "BasePath": "_content/LearningWeb",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "E:\\Hoctap\\GitHUB\\Learning\\LearningWeb\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\LearningWeb.bundle.scp.css"
     },
     {
-      "Identity": "E:\\Hoctap\\GitHUB\\Learning\\LearningWeb\\wwwroot\\css\\cyborg.css",
+      "Identity": "E:\\Hoctap\\GitHUB\\Learning\\LearningWeb\\wwwroot\\css\\lux.css",
       "SourceId": "LearningWeb",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\Hoctap\\GitHUB\\Learning\\LearningWeb\\wwwroot\\",
       "BasePath": "_content/LearningWeb",
-      "RelativePath": "css/cyborg.css",
+      "RelativePath": "css/lux.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\cyborg.css"
+      "OriginalItemSpec": "wwwroot\\css\\lux.css"
     },
     {
       "Identity": "E:\\Hoctap\\GitHUB\\Learning\\LearningWeb\\wwwroot\\css\\site.css",

@@ -631,6 +631,31 @@
             "rid": "win"
           }
         }
+      },
+      "Learning.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Learning.Models": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Learning.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Learning.DataAccess.dll": {}
+        }
+      },
+      "Learning.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Learning.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Learning.Models.dll": {}
+        }
       }
     }
   },
@@ -1850,10 +1875,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Learning.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Learning.DataAccess/Learning.DataAccess.csproj",
+      "msbuildProject": "../Learning.DataAccess/Learning.DataAccess.csproj"
+    },
+    "Learning.Models/1.0.0": {
+      "type": "project",
+      "path": "../Learning.Model/Learning.Models.csproj",
+      "msbuildProject": "../Learning.Model/Learning.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Learning.DataAccess >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.2"
@@ -1885,7 +1921,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Hoctap\\GitHUB\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj": {
+              "projectPath": "E:\\Hoctap\\GitHUB\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

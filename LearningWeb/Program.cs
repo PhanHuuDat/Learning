@@ -1,4 +1,4 @@
-using LearningWeb.Data;
+using Learning.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
