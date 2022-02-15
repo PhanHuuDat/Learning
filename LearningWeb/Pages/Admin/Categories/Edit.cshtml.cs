@@ -1,22 +1,24 @@
 using Learning.DataAccess.Data;
+using Learning.DataAccess.Repository.IRepository;
 using Learning.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LearningWeb.Pages.Admin.Categories
 {
+    [BindProperties]
     public class EditModel : PageModel
     {
-        private readonly ApplicationDbContext _db;
-        [BindProperty]
+        private readonly IUnitOfWork _unitOfWork;
         public Category category { get; set; }
-        public EditModel(ApplicationDbContext db)
+        public EditModel(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
+
         public void OnGet(int id)
         {
-            category = _db.Category.Find(id);
+            category = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
         }
 
         public async Task<IActionResult> OnPost()
@@ -27,12 +29,12 @@ namespace LearningWeb.Pages.Admin.Categories
             }
             if (ModelState.IsValid)
             {
-                _db.Category.Update(category);
-                await _db.SaveChangesAsync();
+                _unitOfWork.Category.Update(category);
+                _unitOfWork.Save();
                 TempData["success"] = "Category updated successfully";
                 return RedirectToPage("Index");
             }
-            return Page();            
+            return Page();
         }
     }
 }

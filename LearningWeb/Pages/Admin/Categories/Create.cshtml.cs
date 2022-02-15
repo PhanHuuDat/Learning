@@ -1,21 +1,23 @@
 using Learning.DataAccess.Data;
+using Learning.DataAccess.Repository.IRepository;
 using Learning.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LearningWeb.Pages.Admin.Categories
 {
+    [BindProperties]
     public class CreateModel : PageModel
     {
-        private readonly ApplicationDbContext _db;
-        [BindProperty]
+        private readonly IUnitOfWork _unitOfWork;
         public Category category { get; set; }
-        public CreateModel(ApplicationDbContext db)
+        public CreateModel(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
         public void OnGet()
         {
+
         }
 
         public async Task<IActionResult> OnPost()
@@ -26,8 +28,8 @@ namespace LearningWeb.Pages.Admin.Categories
             }
             if (ModelState.IsValid)
             {
-                await _db.Category.AddAsync(category);
-                await _db.SaveChangesAsync();
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
                 TempData["success"]="Category created successfully";
                 return RedirectToPage("Index");
             }
