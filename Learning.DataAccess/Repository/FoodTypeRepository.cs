@@ -21,6 +21,7 @@ namespace Learning.DataAccess.Repository
         {
             var objFromDb = _db.FoodType.FirstOrDefault(c => c.Id == foodType.Id);
             objFromDb.Name = foodType.Name;
+
         }
     }
 }
