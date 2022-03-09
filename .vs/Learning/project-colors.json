@@ -25,7 +25,12 @@
       "ProjectGuid": "6c1fa045-13e0-4f04-b8be-d3f3d1ca3867",
       "DisplayName": "Learning.Utility",
       "ColorIndex": 3
+    },
+    "919fd655-f067-4ba2-b932-d926e85dd6b4": {
+      "ProjectGuid": "919fd655-f067-4ba2-b932-d926e85dd6b4",
+      "DisplayName": "Script Documents",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

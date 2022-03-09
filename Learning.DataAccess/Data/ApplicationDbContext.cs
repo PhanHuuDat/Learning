@@ -1,9 +1,10 @@
 ﻿using Learning.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Learning.DataAccess.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
@@ -13,7 +14,7 @@ namespace Learning.DataAccess.Data
         public DbSet<Category> Category { get; set; }
         public DbSet<FoodType> FoodType { get; set; }
         public DbSet<MenuItem> MenuItem { get; set; }
-
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
     }
 }
