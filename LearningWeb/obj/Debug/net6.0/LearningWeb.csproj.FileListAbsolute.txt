@@ -275,3 +275,5 @@ E:\Hoctap\GitHUB\Learning\LearningWeb\obj\Debug\net6.0\LearningWeb.MvcApplicatio
 E:\Hoctap\GitHUB\Learning\LearningWeb\obj\Debug\net6.0\refint\LearningWeb.dll
 E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.Utility.dll
 E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Learning.Utility.pdb
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Hoctap\GitHUB\Learning\LearningWeb\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll

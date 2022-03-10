@@ -19,7 +19,7 @@ namespace Learning.DataAccess.Repository
         {
             _db = db;
             //FoodType, Category
-            //_db.MenuItem.Include(x => x.FoodType).Include(x => x.Category);
+            //_db.ShoppingCart.Include(x => x.MenuItem).ThenInclude(x => x.Category);
             //_db.MenuItem.OrderBy(x => x.Name);
             this.dbSet = db.Set<T>();
         }
