@@ -5400,19 +5400,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\ACER\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Hoctap\\GitHUB\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj",
       "projectName": "Learning.DataAccess",
-      "projectPath": "E:\\Hoctap\\GitHUB\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "E:\\Hoctap\\GitHUB\\Learning\\Learning.DataAccess\\obj\\",
+      "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.DataAccess\\Learning.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5426,8 +5431,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Hoctap\\GitHUB\\Learning\\Learning.Model\\Learning.Models.csproj": {
-              "projectPath": "E:\\Hoctap\\GitHUB\\Learning\\Learning.Model\\Learning.Models.csproj"
+            "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Model\\Learning.Models.csproj": {
+              "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Model\\Learning.Models.csproj"
             }
           }
         }

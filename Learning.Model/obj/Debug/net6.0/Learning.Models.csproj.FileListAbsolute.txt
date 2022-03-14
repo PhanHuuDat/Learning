@@ -10,3 +10,15 @@ E:\Hoctap\GitHUB\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.dll
 E:\Hoctap\GitHUB\Learning\Learning.Model\obj\Debug\net6.0\ref\Learning.Models.dll
 E:\Hoctap\GitHUB\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.pdb
 E:\Hoctap\GitHUB\Learning\Learning.Model\obj\Debug\net6.0\refint\Learning.Models.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\bin\Debug\net6.0\Learning.Models.deps.json
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\bin\Debug\net6.0\Learning.Models.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\bin\Debug\net6.0\Learning.Models.pdb
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.AssemblyInfoInputs.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.AssemblyInfo.cs
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\refint\Learning.Models.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\Learning.Models.pdb
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Model\obj\Debug\net6.0\ref\Learning.Models.dll

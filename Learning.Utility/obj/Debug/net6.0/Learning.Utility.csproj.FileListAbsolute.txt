@@ -10,3 +10,15 @@ E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\ref\Learning.Utility
 E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.pdb
 E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.csproj.AssemblyReference.cache
 E:\Hoctap\GitHUB\Learning\Learning.Utility\obj\Debug\net6.0\refint\Learning.Utility.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.deps.json
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\bin\Debug\net6.0\Learning.Utility.pdb
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.csproj.AssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.AssemblyInfoInputs.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.AssemblyInfo.cs
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\refint\Learning.Utility.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\Learning.Utility.pdb
+C:\Users\ACER\Documents\GitHub\Learning\Learning.Utility\obj\Debug\net6.0\ref\Learning.Utility.dll
