@@ -36,8 +36,6 @@ namespace LearningWeb.Pages.Customer.Cart
             _unitOfWork.ShoppingCart.RemoveRange(shoppingCarts);
             _unitOfWork.Save();
             OrderId = id;
-
-
         }
     }
 }

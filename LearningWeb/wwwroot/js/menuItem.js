@@ -1,4 +1,5 @@
-﻿$(document).ready(function () {
+﻿var dataTable;
+$(document).ready(function () {
     dataTable = $('#DT_Table').DataTable({
         "ajax": {
             "url": "/api/MenuItem",
