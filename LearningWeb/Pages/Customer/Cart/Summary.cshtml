@@ -1,6 +1,7 @@
 ﻿@page
+@using Microsoft.Extensions.Options
 @model LearningWeb.Pages.Customer.Cart.SummaryModel
-
+@inject IOptions<Learning.Utility.StripeSettings> Stripe
 <form method="post">
     <br />
     <div class="backgroundWhiteBorder">
@@ -48,7 +49,7 @@
                                         <label>Pickup Date</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="OrderHeader.PickUpDate" type="date" class="form-control" />
+                                        <input value="" asp-for="OrderHeader.PickUpDate" type="date" class="form-control" />
                                         <span asp-validation-for="OrderHeader.PickUpDate" class="text-danger"></span>
                                     </div>
                                 </div>
@@ -57,7 +58,7 @@
                                         <label>Pickup Time</label>
                                     </div>
                                     <div class="col-9">
-                                        <input asp-for="OrderHeader.PickUpTime" type="time" class="form-control" />
+                                        <input value="" asp-for="OrderHeader.PickUpTime" type="time" class="form-control" />
                                         <span asp-validation-for="OrderHeader.PickUpTime" class="text-danger"></span>
                                     </div>
                                 </div>
@@ -89,7 +90,7 @@
 
                                     <li class="list-group-item d-flex justify-content-between bg-light">
                                         <small class="text-info">Total (USD)</small>
-                                        <strong class="text-info">$@Model.OrderHeader.OrderTotal</strong>
+                                        <strong class="text-info">$@Model.OrderHeader.OrderTotal.ToString("0.##")</strong>
                                     </li>
                                 </ul>
                             </div>
@@ -110,6 +111,8 @@
 
 @section Scripts{
     @{
-        <partial name="_ValidationScriptsPartial" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <partial name="_ValidationScriptsPartial" />
     }
 }

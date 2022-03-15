@@ -4,6 +4,7 @@ using Learning.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Stripe.Checkout;
 using System.Security.Claims;
 
 namespace LearningWeb.Pages.Customer.Cart
@@ -44,7 +45,7 @@ namespace LearningWeb.Pages.Customer.Cart
             }
         }
 
-        public void OnPost()
+        public IActionResult OnPost()
         {
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
@@ -62,11 +63,11 @@ namespace LearningWeb.Pages.Customer.Cart
                 OrderHeader.Status = SD.StatusPending;
                 OrderHeader.OrderDate = DateTime.Now;
                 OrderHeader.UserId = claim.Value;
-                OrderHeader.PickUpDate = Convert.ToDateTime(OrderHeader.PickUpDate.ToShortTimeString()+" "+ OrderHeader.PickUpTime.ToShortTimeString());
+                OrderHeader.PickUpDate = Convert.ToDateTime(OrderHeader.PickUpDate.ToShortDateString() + " " + OrderHeader.PickUpTime.ToShortTimeString());
                 _unitOfWork.OrderHeader.Add(OrderHeader);
                 _unitOfWork.Save();
 
-                foreach(var item in ShoppingCartList)
+                foreach (var item in ShoppingCartList)
                 {
                     OrderDetails orderDetails = new()
                     {
@@ -78,9 +79,55 @@ namespace LearningWeb.Pages.Customer.Cart
                     };
                     _unitOfWork.OrderDetails.Add(orderDetails);
                 }
-                _unitOfWork.ShoppingCart.RemoveRange(ShoppingCartList);
+                
+                //_unitOfWork.ShoppingCart.RemoveRange(ShoppingCartList);
                 _unitOfWork.Save();
+
+                var domain = "https://localhost:44355";
+                var options = new Stripe.Checkout.SessionCreateOptions
+                {
+                    LineItems = new List<SessionLineItemOptions>(),
+
+                    PaymentMethodTypes = new List<String>
+                    {
+                        "card",
+                    },
+
+                    Mode = "payment",
+                    SuccessUrl = domain + $"/customer/cart/OrderConfirmation?id={OrderHeader.Id}",
+                    CancelUrl = domain + "/customer/cart/Index",
+                };
+                //addline item
+                foreach (var item in ShoppingCartList)
+                {
+                    var sessionLineItem = new SessionLineItemOptions
+                    {
+                        // Provide the exact Price ID (for example, pr_1234) of the product you want to sell
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
+                            // 1.11->111
+                            UnitAmount = (long)(item.MenuItem.Price * 100),
+                            Currency = "usd",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = item.MenuItem.Name
+                            },
+                        },
+                        Quantity = item.Count
+                    };
+                    options.LineItems.Add(sessionLineItem);
+                }
+
+                var service = new Stripe.Checkout.SessionService();
+                Session session = service.Create(options);
+
+                Response.Headers.Add("Location", session.Url);
+                OrderHeader.SessionId = session.Id;
+                OrderHeader.PaymentIntentId = session.PaymentIntentId;
+                _unitOfWork.Save();
+                return new StatusCodeResult(303);
             }
+            return Page();
         }
     }
 }

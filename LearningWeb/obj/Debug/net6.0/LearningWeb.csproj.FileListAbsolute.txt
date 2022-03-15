@@ -524,12 +524,7 @@ C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\wi
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\Learning.DataAccess.dll
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\Learning.Models.dll
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\Learning.Utility.dll
@@ -556,3 +551,9 @@ C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\obj\Debug\net6.0\refint\Lear
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\obj\Debug\net6.0\LearningWeb.pdb
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\obj\Debug\net6.0\LearningWeb.genruntimeconfig.cache
 C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\obj\Debug\net6.0\ref\LearningWeb.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\Stripe.net.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ACER\Documents\GitHub\Learning\LearningWeb\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
