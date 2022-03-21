@@ -1,5 +1,6 @@
 using Learning.DataAccess.Repository.IRepository;
 using Learning.Models;
+using Learning.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -35,7 +36,7 @@ namespace LearningWeb.Pages.Customer.Cart
                 foreach (var cart in ShoppingCartList)
                 {
                     CartTotal += (cart.MenuItem.Price * cart.Count);
-                }                
+                }
             }
         }
 
@@ -54,16 +55,21 @@ namespace LearningWeb.Pages.Customer.Cart
             }
             else
             {
+                var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count - 1;
                 _unitOfWork.ShoppingCart.Remove(cart);
                 _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart, count);
             }
             return RedirectToPage("/Customer/Cart/Index");
         }
         public IActionResult OnPostRemove(int cartId)
         {
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId);
+            var count = _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == cart.ApplicationUserId).ToList().Count - 1;
+
             _unitOfWork.ShoppingCart.Remove(cart);
             _unitOfWork.Save();
+            HttpContext.Session.SetInt32(SD.SessionCart, count);
             return RedirectToPage("/Customer/Cart/Index");
         }
     }

@@ -132,7 +132,7 @@ namespace LearningWeb.Areas.Identity.Pages.Account
                 user.PhoneNumber = Input.PhoneNumber;
 
                 var result = await _userManager.CreateAsync(user, Input.Password);
-                if(!await _roleManager.RoleExistsAsync(SD.KitchenRole))
+                if (!await _roleManager.RoleExistsAsync(SD.KitchenRole))
                 {
                     _roleManager.CreateAsync(new IdentityRole(SD.KitchenRole)).GetAwaiter().GetResult();
                     _roleManager.CreateAsync(new IdentityRole(SD.ManagerRole)).GetAwaiter().GetResult();
@@ -142,7 +142,7 @@ namespace LearningWeb.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     string role = Request.Form["rdUserRole"].ToString();
-                    if(role == SD.KitchenRole)
+                    if (role == SD.KitchenRole)
                     {
                         await _userManager.AddToRoleAsync(user, SD.KitchenRole);
                     }
@@ -184,6 +184,11 @@ namespace LearningWeb.Areas.Identity.Pages.Account
                     }
                     else
                     {
+                        if (User.IsInRole(SD.ManagerRole))
+                        {
+                            TempData["success"] = "Employee Registered Sucessfully.";
+                            return RedirectToPage("/Customer/Home/Index");
+                        }
                         await _signInManager.SignInAsync(user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }

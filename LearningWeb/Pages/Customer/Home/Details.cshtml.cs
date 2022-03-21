@@ -1,5 +1,6 @@
 using Learning.DataAccess.Repository.IRepository;
 using Learning.Models;
+using Learning.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -40,26 +41,23 @@ namespace LearningWeb.Pages.Customer.Home
             if (ModelState.IsValid)
             {
                 ShoppingCart shoppingCartFromDb = _unitOfWork.ShoppingCart.GetFirstOrDefault(
-                   filter: u=>u.ApplicationUserId == ShoppingCart.ApplicationUserId && 
-                   u.MenuItemId == ShoppingCart.MenuItemId);                
+                   filter: u => u.ApplicationUserId == ShoppingCart.ApplicationUserId &&
+                   u.MenuItemId == ShoppingCart.MenuItemId);
 
-                if(shoppingCartFromDb == null)
+                if (shoppingCartFromDb == null)
                 {
                     _unitOfWork.ShoppingCart.Add(ShoppingCart);
                     _unitOfWork.Save();
+                    HttpContext.Session.SetInt32(SD.SessionCart,
+                        _unitOfWork.ShoppingCart.GetAll(u => u.ApplicationUserId == ShoppingCart.ApplicationUserId).ToList().Count);
                 }
                 else
                 {
-                    _unitOfWork.ShoppingCart.IncrementCount(shoppingCartFromDb,ShoppingCart.Count);
+                    _unitOfWork.ShoppingCart.IncrementCount(shoppingCartFromDb, ShoppingCart.Count);
                 }
-                
                 return RedirectToPage("Index");
             }
-            
-
             return Page();
-
-
         }
     }
 }

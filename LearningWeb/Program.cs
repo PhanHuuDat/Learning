@@ -25,6 +25,18 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = "/Identity/Account/Logout";
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IOTimeout = TimeSpan.FromMinutes(100);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddAuthentication().AddFacebook(options =>
+{
+    options.AppId = "313781060741794";
+    options.AppSecret = "f1ba412da4e959d12afae7a887d5ca01";
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,7 +56,7 @@ string key = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 StripeConfiguration.ApiKey = key;
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseSession();
 app.MapRazorPages();
 app.MapControllers();
 app.Run();
