@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Learning.Utility;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Stripe;
+using Learning.DataAccess.DbInitializer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Str
 builder.Services.AddIdentity<IdentityUser,IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -51,7 +53,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+SeedDatabase();
 string key = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 StripeConfiguration.ApiKey = key;
 app.UseAuthentication();
@@ -60,3 +62,12 @@ app.UseSession();
 app.MapRazorPages();
 app.MapControllers();
 app.Run();
+
+void SeedDatabase()
+{
+    using(var scope = app.Services.CreateScope())
+    {
+        var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+        dbInitializer.Initialize();
+    }
+}

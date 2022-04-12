@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Learning.Model\Learning.Models.csproj" />
+    <ProjectReference Include="..\Learning.Utility\Learning.Utility.csproj" />
   </ItemGroup>
 
 </Project>

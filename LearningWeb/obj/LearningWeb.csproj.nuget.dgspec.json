@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Model\\Learning.Models.csproj": {
                 "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Model\\Learning.Models.csproj"
+              },
+              "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Utility\\Learning.Utility.csproj": {
+                "projectPath": "C:\\Users\\ACER\\Documents\\GitHub\\Learning\\Learning.Utility\\Learning.Utility.csproj"
               }
             }
           }

@@ -2539,6 +2539,7 @@
       "Learning.DataAccess/1.0.0": {
         "dependencies": {
           "Learning.Models": "1.0.0",
+          "Learning.Utility": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore": "6.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3"

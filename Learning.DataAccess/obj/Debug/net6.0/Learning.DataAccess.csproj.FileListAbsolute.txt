@@ -32,3 +32,5 @@ C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\obj\Debug\net6.0\ref
 C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.pdb
 C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\obj\Debug\net6.0\Learning.DataAccess.genruntimeconfig.cache
 C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\obj\Debug\net6.0\ref\Learning.DataAccess.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.Utility.dll
+C:\Users\ACER\Documents\GitHub\Learning\Learning.DataAccess\bin\Debug\net6.0\Learning.Utility.pdb
